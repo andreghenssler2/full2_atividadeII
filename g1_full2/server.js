@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 // Permitir apenas o frontend React em http://localhost:3000
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "http://localhost:3000/usuario" }));
 app.use(express.json());
 
 // Rotas da API
